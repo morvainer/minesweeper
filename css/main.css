@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.timer{
+    text-align: center;
+    margin-top: 10px;
+}
+
+table {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 5%;
+    position: fixed;
+    left: 42%;
+    top: 10%;
+}
+
+td {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    
+    
+}
+
+footer {
+    bottom: 5%;
+    position: fixed;
+    left: 2%;
+}
