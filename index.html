@@ -9,12 +9,23 @@
     <title>Document</title>
 </head>
 <body  onload="initGame()" >
-    <h1>Mine Sweeper</h1>
-    <div class="timer"><span>Timer: </span><span class= "stopwatch"> 00:00 </span> </div>
-    <table>
+    <div class="gameArea">
+      <div class="header">
+          <h1>Mine Sweeper</h1>
+           <div class="timer"><span>Timer: </span>  <span class= "stopwatch"> 00:00 </span></div>
+           <div class="lives"><span>Lives: </span>  <span class= "num-lives"> 0 </span ><span onclick = "restartGame()" class= "smiley"> 0 </span></div>
+           <!-- <div class="smiley">0</div> -->
+           <div class="buttons">
+           <button class="levelButton beginner" onclick="gameLevel(this)">Beginner</button>
+           <button class="levelButton medium" onclick="gameLevel(this)">Medium</button>
+           <button class="levelButton expert" onclick="gameLevel(this)">Expert</button>
+          </div>
+           </div>
+    <table class="centered">
         <tbody class="board"></tbody>
       </table>
-      <!-- <button onclick="mouseClick(event)">button </button> -->
+    </div>
+      <div class="modal">Game Over</div>
       <footer>Mor Vainer</footer>
       <script src="js/utils.js"></script>
       <script src="js/main.js"></script>

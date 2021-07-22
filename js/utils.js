@@ -103,18 +103,10 @@ function stopTimer() {
     alert('Done at: '+finishTime);
 }
 
-// location such as: {i: 2, j: 7}
-//from pacman//מושהה
-// function renderCell(location, value) {
-//     // Select the elCell and set the value
-//     var elCell = document.querySelector(`.cell${location.i}-${location.j}`);
-//     elCell.innerHTML = value;
-//   }
+
   //from ball game
   function renderCell3(location, value) {
-	// console.log('location:', location);
 	var cellSelector = '.' + getClassName(location)// Returns the class name for a specific cell//get location in coordinates//gets object location{i, j}
-  // console.log('this is the class name', cellSelector);
 	var elCell = document.querySelector(cellSelector);//gets the class
 	elCell.innerHTML = value;//puts the value in the class
 }
