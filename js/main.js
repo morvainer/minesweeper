@@ -131,6 +131,7 @@ function restartGetAHint() {
 }
 
 function getAHint(lightBulb) {
+    if(!gGame.isOn) return;
     if (gHintCount === 0) return;
     lightBulb.innerHTML = LIGHTBULBON_IMG;
     gHint = true;
@@ -138,6 +139,7 @@ function getAHint(lightBulb) {
 }
 
 function safeClick(btn) {
+    if(!gGame.isOn) return;
     if (gCountSafeClicks === 0) {
         return;
     }
@@ -318,7 +320,7 @@ function buildBoard() {
 }
 
 function cellClicked(elCell, i, j) {
-
+if(!gGame.isOn) return;
     if (gMouseClick === 0) {
         if (gTime === 0 && gBoard[i][j].isMine) {
             //if its the first click and it's a mine
