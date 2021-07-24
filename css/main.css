@@ -1,80 +1,217 @@
 body{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    /* background-image: linear-gradient(rgb(251, 251, 251), rgb(89, 47, 168));
+    background-image: radial-gradient(rgb(251, 251, 251), rgb(89, 47, 168));
+    background-repeat: no-repeat;
+     */
+     background-color: rgb(233, 219, 200);
+    
 }
 
+
 h1 {
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 42%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .timer{
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 34.5%;
     margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
 }
 .lives{
-    text-align: center;
-    margin-top: 10px;
-    
+    /* text-align: center; */
+    margin-left: 34.5%;
+    margin-top: 0px;
+    /* margin-bottom: 20px; */
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
 
 }
 .smiley{
-    text-align: center;
-    margin-top: 10px;
-    font-size: 15px;
+    /* text-align: center; */
+    margin-left: 47%;
+    /* margin-top: -20%; */
+    font-size: 180%;
     color:black;
+    /* width: 2%;  */
+    /* height: auto;  */
+    /* background-color: blue; */
 
 }
 
+.smiley:hover{
+    cursor: pointer;
+}
+/* .hints{
+    width: 10px;
+    height: 10px;
+}*/
+
+/* .light-bulb{
+    width: 10px;
+    height: 10px;
+
+}  */
+img {
+    width: 1.5%;
+    height: auto;
+    object-fit: contain;
+  }
+/*   
+.light-bulb-img{
+    width: 20px;
+    height: 30px;
+
+} */
+.hints{
+    margin-left: 60%;
+    width: 100%;
+    margin-top: -6%;
+    margin-bottom: 0px;
+}
+
+.light-bulb{
+    display: inline;
+    /* position: fixed; */
+    
+}
 .buttons{
-    position: fixed;
-    left: 50%;
-    top: 200px;
-    margin-left: -99px;
-    margin-top: -70px;
+    /* position: fixed; */
+    left: 44%;
+    /* top: 100%; */
+    margin-left: 33%;
+    margin-top: -33px;
+    /* padding-top: 10px; */
+    /* bottom: 0;     */
 }
-
+.levelButton{
+    margin-left: 30px;
+    background-color: rgb(150, 54, 173);
+    /* margin-left: 55.5%; */
+    color: whitesmoke;
+    /* border:rgb(81, 19, 97) 3px solid; */
+    border-radius: 5px;
+    width: 9%;
+    height: 3%;
+    font-size: 16px;
+    font-weight:535;
+    /* margin-bottom: 20%; */
+}
+.levelButton:hover{
+    cursor: pointer;
+}
 .centered {
-    position: fixed;
-    left: 52%;
-    top: 200px;
-    margin-left: -100px;
-    margin-top: -30px;
+    /* position: fixed; */
+    /* left: 42%;
+    top: 200px; */
+    /* margin-left: -10px; */
+    /* margin-top: -30px; */
+    margin-right: auto;
+    margin-left: 43%;
+    margin-top: 20px;
+    
   }
 
 table {
-    border: 1px solid black;
+    border: 3px solid rgb(107, 103, 103);
+    border-radius: 5px;
     margin: 0 auto;
     margin-top: 5px;
-    position: fixed;
-    left: 42%;
+    /* position: fixed; */
+    left: 52%;
     top: 10%;
-    position: fixed;
+    /* position: fixed; */
+    /* table-layout:fixed; */
+    table-layout:auto;
+    background-color:  antiquewhite;
+    
+   
+    
 }
 
 td {
-    border: 1px solid black;
+    border: 3px solid rgb(107, 103, 103);
+    border-radius: 5px;
     width: 30px;
     height: 30px;
-    text-align: center;
+    text-align: center;   
     
-    
+}
+
+.cell{
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+/* .safe-click{
+    width: 50px;
+    background-color: crimson;
+    margin-left: 45%;
+} */
+.safeclick-btn{
+    /* bottom: 85%; */
+    /* margin-top: 20%; */
+    /* position: fixed; */
+    /* left: 47%; */
+    margin-top: 16px;
+    /* margin-bottom: 1%; */
+    background-color: rgb(61, 71, 207);
+    margin-left: 59.5%;
+    color: whitesmoke;
+    /* border:rgb(24, 141, 214) 3px solid; */
+    border-radius: 5px;
+    width: 6%;
+    height: 6%;
+    font-size: 16px;
+    font-weight:535;
+
+}
+
+.safeclick-btn:hover{
+    cursor: pointer;
+}
+
+
+.clicks-available{
+    /* bottom: 80%; */
+    /* margin-top: 20%; */
+    /* position: fixed; */
+    /* left: 46%; */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-left: 60%;
+    margin-top: 16px;
+
 }
 
 .modal{
     position: absolute;
-    color:blueviolet;
+    color: white;
+    text-shadow: black 2px;
+    border: black solid 3px;
+    background-color: teal;
+    padding: 10px;
     font-size: 80px;
-    left: 35%;
-    top: 33%;
+    left: 31%;
+    top: 35%;
     font-weight: bold;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: none;
 }
 
-.restart-btn{
-    bottom: 10%;
+/* .restart-btn{
+    bottom: 10px;
     left: 50%;
     margin-left: 63%;
-}
+} */
 
 footer {
     bottom: 5%;

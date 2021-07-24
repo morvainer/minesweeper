@@ -9,23 +9,36 @@
     <title>Document</title>
 </head>
 <body  onload="initGame()" >
-    <div class="gameArea">
-      <div class="header">
+    <div class="game-area">
           <h1>Mine Sweeper</h1>
-           <div class="timer"><span>Timer: </span>  <span class= "stopwatch"> 00:00 </span></div>
-           <div class="lives"><span>Lives: </span>  <span class= "num-lives"> 0 </span ><span onclick = "restartGame()" class= "smiley"> 0 </span></div>
-           <!-- <div class="smiley">0</div> -->
-           <div class="buttons">
+          <div class="timer"><span>Timer: </span><span class= "stopwatch"> 00:00 </span></div>
+          <div> <span onclick = "restartGame()" class= "smiley"> 0 </span></div>
+          <div class="lives"><span>Lives: </span>   <span class= "num-lives"> 0 </span ></div>
+           
+            <div class= "hints">  
+                  <div class=" light-bulb light-bulb1" onclick = "getAHint(this)"><img  class="light-bulb-img" src="img/lightBulbOff.png" /></div>
+                  <div class="light-bulb light-bulb2" onclick = "getAHint(this)"><img class="light-bulb-img" src="img/lightBulbOff.png" /></div>
+                  <div class=" light-bulb light-bulb3" onclick = "getAHint(this)"><img class="light-bulb-img" src="img/lightBulbOff.png" /></div>  
+            </div> 
+        
+          <div class="safe-click"><button onclick="safeClick(this)" class="safeclick-btn">Safe Click</button></div>
+          <div class="clicks-available"><span  class="numberof-clicks" >3</span> clicks <br> available </div>
+          
+          <div class="buttons">
            <button class="levelButton beginner" onclick="gameLevel(this)">Beginner</button>
            <button class="levelButton medium" onclick="gameLevel(this)">Medium</button>
            <button class="levelButton expert" onclick="gameLevel(this)">Expert</button>
           </div>
-           </div>
-    <table class="centered">
+          
+       
+     <table class="centered">
         <tbody class="board"></tbody>
       </table>
     </div>
-      <div class="modal">Game Over</div>
+   
+   
+     
+    <div class="modal">Game Over</div>
       <footer>Mor Vainer</footer>
       <script src="js/utils.js"></script>
       <script src="js/main.js"></script>
